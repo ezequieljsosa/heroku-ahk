@@ -68,10 +68,10 @@
                 <version>1.1.3</version>
                 <configuration>
                     <jdkVersion>1.8</jdkVersion>
-                    <appName>heroku-ahk</appName>
+                    <appName>web-ahk</appName>
                     <processTypes>
                         <!-- Tell Heroku how to launch your application -->
-                        <web>java -jar ./target/heroku-ahk-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
+                        <web>java -jar  target/heroku-ahk-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
