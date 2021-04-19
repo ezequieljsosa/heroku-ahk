@@ -71,7 +71,7 @@
                     <appName>heroku-ahk</appName>
                     <processTypes>
                         <!-- Tell Heroku how to launch your application -->
-                        <web>java -jar ./target/webapp.jar</web>
+                        <web>java -jar ./target/heroku-ahk-1.0-SNAPSHOT-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
