@@ -1,1 +1,1 @@
-web: java -jar  target/heroku-ahk-1.0-SNAPSHOT-jar-with-dependencies.jar -p $PORT
+web: java $JAVA_OPTS -Dserver.port=$PORT -jar target/*.jar
