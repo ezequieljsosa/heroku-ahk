@@ -1,0 +1,13 @@
+language: java
+jdk:
+- openjdk8
+sudo: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: lP0S5oQyff9lvtFJYmapC/fF/wPLMKPK7VBBvdObPla4N018LYSYYp7wvsmpIfPGAzQ37XdNrZ1pHYlCXmQH0/5mr+vBeuFfTYAKmnQgxkd5BI32CZauaZriLrKbJI4bHm0nW8D1VEFArp/23721EnhOH7RzmHvWhaLKhIftmety5pPUCnUcYlskF4KrqkLUigRMlM8bKPAaC+u3e4pS9a8czADVfRFDrmh7AMdAwu1UdTRumB+mkAwFljfX60fd3VKT6H3aBPjwRT0u7Rg595o5xqQ342gV47pEnYyF/+lHxk1UaxrnuTSRs+MCMREfMe8c5HmbH4BaGM3bMPvTk9pUOAKXXRx/OpxeC+wxBQKlSNc5ZJWdRBSGQUZ1t08he0D7H89Xcarlzr8MFEdccJtJIxrXh4+mOpUr6neXOPSVMU3HGTn2HnQwy95ZDkgFHD3x/7xdAL5R+Q5igxvbDLRecca5UyTw7j518VxVVwbAMvC8mkyrTO3ad+0+9f/fZVnGS/0pvSMFZA79HHj5G1o1yEYdqBwNTQ5rR0PwrGGwyGZ5vvCVV8H115OCbUyfKGeiAxwtE0HtP2N6H+Hj1jC2+7o1gfyMp8px47aFvIN2OijrOf6oR1wVsyKpcRBZ0LD+JVYWY5fTdUDjuTriQ5BjUASwp3usBs+WFZcgI6A=
+  app: web-ahk
+  on:
+    repo: ezequieljsosa/heroku-ahk
+    branch: heroku_deploy
+  skip_cleanup: 'true'
